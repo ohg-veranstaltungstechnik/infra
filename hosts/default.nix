@@ -1,0 +1,3 @@
+{
+  inventory = import ./servers/inventory;
+}
