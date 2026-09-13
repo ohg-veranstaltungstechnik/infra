@@ -5,7 +5,7 @@
 
   deploy = {
     enable = true;
-    targetHost = "inventory";
+    targetHost = "inventory-deploy";
     targetPort = 22;
     targetUser = "deploy";
     buildOnTarget = true;
