@@ -1,13 +1,16 @@
 keys:
+  - &master age1qtjd4wlwuhevach7280m2sfvgdpmqv7x8n2ndrvswu3t725rxyfsrh7dfn
   - &moritz age1ek2kysw5xlw5gkrckpmty67g53v99rkm7lgrr8ds8dsm2l7fafmqzw5m54
   - &inventory age1x5xq6ytzgg58hrvfkygvwjp4zrl2x69x6pned4q0f0xkl0g3vg4se7tl94
 creation_rules:
   - path_regex: secrets/secrets.yaml$
     key_groups:
     - age:
+      - *master
       - *moritz
   - path_regex: secrets/inventory.yaml$
     key_groups:
       - age:
+        - *master
         - *moritz
         - *inventory
